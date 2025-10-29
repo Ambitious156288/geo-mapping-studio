@@ -13,7 +13,8 @@
       "@pages/*": ["pages/*"],
       "@hooks/*": ["hooks/*"],
       "@context/*": ["context/*"],
-      "@config/*": ["config/*"]
+      "@config/*": ["config/*"],
+      "@store/*": ["store/*"]
     },
 
     "esModuleInterop": true,
@@ -28,5 +29,5 @@
 
     "types": ["node"]
   },
-  "include": ["src"]
+  "include": ["src", "env.d.ts"]
 }

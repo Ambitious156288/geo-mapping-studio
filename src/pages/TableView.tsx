@@ -1,20 +1,8 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import { GeoJsonTable } from "@/components/GeoJsonTable";
 
-export const TableView = () => {
-  return (
-    <Box
-      sx={{
-        position: "absolute",
-        inset: 0,
-        bgcolor: "background.paper",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <Typography variant="h5" color="text.secondary">
-        @TODO Table
-      </Typography>
-    </Box>
-  );
-};
+export const TableView = () => (
+  <Box sx={{ height: "100%", pt: { xs: 7, sm: 8 }, px: { xs: 1, sm: 2 } }}>
+    <GeoJsonTable />
+  </Box>
+);
